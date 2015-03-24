@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -402,22 +403,25 @@
             <!--            slide5 start-->
             <div class="swiper-slide slide5">
                 <h1 id="s5_1">农产品的生产方式</h1>
+                <div id="divMouse">
+                    <div id="ti"></div>
+                </div>
                 <div id="chart5_1">
                     <div class="bubble">
-                        <div id="c1">收购</div>
-                        <div id="c2">自加工</div>
-                        <div id="c3">代销</div>
-                        <div id="c4">自产</div>
+                        <div id="c1" class="paopao">收购</div>
+                        <div id="c2" class="paopao">自加工</div>
+                        <div id="c3" class="paopao">代销</div>
+                        <div id="c4" class="paopao">自产</div>
                     </div>
                 </div>
                 <h1 id="s5_2">农产品的销售方式</h1>
                 <div id="chart5_2">
                     <div class="bubble">
-                        <div id="c5">其他</div>
-                        <div id="c6">批发</div>
-                        <div id="c7">零售</div>
-                        <div id="c8">批零兼营</div>
-                        <div id="c9">期货</div>
+                        <div id="c5" class="paopao">其他</div>
+                        <div id="c6" class="paopao">批发</div>
+                        <div id="c7" class="paopao">零售</div>
+                        <div id="c8" class="paopao">批零兼营</div>
+                        <div id="c9" class="paopao">期货</div>
                     </div>
                 </div>
             </div>
@@ -601,7 +605,7 @@
 
             <!--        slide11 start-->
             <div class="swiper-slide slide11">
-                <h1 id="s11_1"> 农民家中电器配备情况</h1>
+                <h1 id="s11_1"> 农民家中配备情况</h1>
                 <div id="chart11">
                     <div class="leftCon">
                         <ul>
@@ -830,6 +834,15 @@
                                 $("#chart5_2 .bubble").show();
                                 $("#c5,#c6,#c7,#c8,#c9").addClass("cani");
                             });
+                        });
+                        $(".paopao").mousemove(function (e) {
+                            var xPos = parseInt(e.pageX - 25) + "px";
+                            var yPos = parseInt(e.pageY - 75) + "px";
+                            $("#divMouse").css("left", xPos).css("display", "block");
+                            $("#divMouse").css("top", yPos);
+                        });
+                        $(".paopao").mouseleave(function () {
+                            $("#divMouse").css("display", "none");
                         });
                         break;
                     case 11: //slide6
