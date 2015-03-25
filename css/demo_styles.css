@@ -1046,6 +1046,9 @@ body {
     background: #ff8787;
     display: none;
     z-index: 2;
+    color:#000;
+    line-height: 50px;
+    font-size: 12px;
 }
 
 #ti {
