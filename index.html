@@ -231,92 +231,54 @@
             </div>
 
             <div class="swiper-slide slide1">
-                <h1 id="s1_2">有多少农产品企业</br>在使用电子商务？</h1>
-                <div id="chart1_2">
-                    <div id="textholder1_2">
-                        <div id="qipao1_2">ONLY 7%
-                            <div class="t1"></div>
-                            <div class="t2"></div>
-                        </div>
-                    </div>
-                    <canvas id="canvas1_2"></canvas>
-
-                </div>
-                <div class="legend" id="l1_2">
-                    <ul>
-                        <li>
-                            <div id="sqr1_2_1" class="sqr"></div>
-                            <p>电商</p>
-                        </li>
-                        <li>
-                            <div id="sqr1_2_2" class="sqr"></div>
-                            <p>非电商</p>
-                        </li>
-                    </ul>
-                </div>
+                
+                <h1 id="s1_2">大部分农产品企业</br>没有使用过电子商务</h1>
+            <div class="ovso">
+                <div class="o" id="o1"><br/>93%<div>未使用</div></div>
+                <div class="o" id="o2"><br/>7%<div>使用过</div></div>
+                <div id="vs">vs</div>
+            </div>
                 <p class="text">总体而言，涉农电子商务在河北涉农企业的利用率比较低，河北地区已开展电子商务的涉农企业并不多。</p>
+                <div class="bkdiv"></div>
             </div>
             <!--            slide1 end-->
 
             <!--            slide2 start-->
             <div class="swiper-slide slide2">
-                <h1>电子商务对农民收入</br>影响多少？</h1>
+                <h1>大部分农民认为</br>电子商务对其收入影响不大</h1>
                 <div id="chart2">
                     <div id="chart2innerMask"><img src="images/%EF%BF%A5.png" />
                     </div>
                     <div id="pi1" class="pi">
                         <div class="left"></div>
-                        <div class="right bkblue"></div>
+                        <div class="right bkblue2"></div>
                     </div>
                     <div id="pi2" class="pi">
                         <div class="left"></div>
-                        <div class="right bkyellow2"></div>
+                        <div class="right bkblue1"></div>
                     </div>
                     <div id="pi3" class="pi">
                         <div class="left"></div>
-                        <div class="right bkyellow"></div>
+                        <div class="right bkblue"></div>
                     </div>
                     <div id="pi4" class="pi">
                         <div class="left"></div>
-                        <div class="right bkgreen"></div>
+                        <div class="right bkyellow"></div>
                     </div>
                     <div id="pi5" class="pi">
                         <div class="left"></div>
-                        <div class="right bkgreen">
-                        </div>
+                        <div class="right bkyellow"></div>
                     </div>
                 </div>
-                <div class="legend">
-                    <ul>
-                        <li>
-                            <div id="sqr2_1_1" class="sqr"></div>
-                            <p>影响很大</p>
-                        </li>
-                        <li>
-                            <div id="sqr2_1_2" class="sqr"></div>
-                            <p>影响不大</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="legend">
-                    <ul>
-                        <li>
-                            <div id="sqr2_1_3" class="sqr"></div>
-                            <p>没有影响</p>
-                        </li>
-                        <li>
-                            <div id="sqr2_1_4" class="sqr"></div>
-                            <p>不知道</p>
-                        </li>
-                    </ul>
-                </div>
-
+        <div class="ins">
+            <img src="images/slide2ins.png"/>
+        </div>
             </div>
             <!--            slide2 end-->
 
             <!--           slide3 start-->
             <div class="swiper-slide slide3">
-                <h1>基层农民心中的</br>电商适用人群</h1>
+                <h1>农民心中年轻人</br>适合开展电子商务活动</h1>
                 <div id="chart3">
                     <div class="leftCon">
                         <ul>
@@ -402,7 +364,7 @@
             <!--            slide4 end-->
             <!--            slide5 start-->
             <div class="swiper-slide slide5">
-                <h1 id="s5_1">农产品的生产方式</h1>
+                <h1 id="s5_1">自产是主要的生产方式</h1>
                 <div id="divMouse">
                     <div id="ti"></div>
                 </div>
@@ -414,7 +376,7 @@
                         <div id="c4" class="paopao">自产</div>
                     </div>
                 </div>
-                <h1 id="s5_2">农产品的销售方式</h1>
+                <h1 id="s5_2">批发零售为主要销售方式</h1>
                 <div id="chart5_2">
                     <div class="bubble">
                         <div id="c5" class="paopao">其他</div>
@@ -771,20 +733,7 @@
                         document.body.clientHeight;
                         break;
                     case 6: //slide1
-                        $('#s1_2').show();
-                        $('#s1_2').animo({
-                            animation: 'bounceInLeft',
-                            duration: 1
-                        }, function () {
-
-                            if (isPlay1_2) {
-                                isPlay1_2 = false;
-                                canvas1_2();
-                            }
-                            setTimeout("$('#textholder1_2').show();", 1500);
-                            $('#l1_2').show();
-                            setTimeout("$('.slide1 .text').show();$('.slide1 .text').addClass('scaleYTopani');", 1500);
-                        });
+                        
                         break;
                     case 7: //slide2
                         $(".slide2 h1").animo({
@@ -796,7 +745,7 @@
                             $("#pi3").addClass("sp3");
                             $("#pi4").addClass("sp4");
                             $("#pi5").addClass("sp5");
-                            $(".slide2 .legend").show();
+                            setTimeout("$('.slide2 .ins').show();",1000);
                         });
                         break;
                     case 8: //slide3
