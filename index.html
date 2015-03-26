@@ -392,23 +392,33 @@
             <!--           slide6 start-->
             <div class="swiper-slide slide6">
                 <h1>农民对于传统生产经营状况<br/>的满意度</h1>
-                <div class="conbar">
-                    <div id="innerbar6_1"></div>
-                    <div id="innerbar6_2"><img src="images/like.png">
-                        <p>满意
-                            <br/>30.87%</p>
-                    </div>
-                    <div id="innerbar6_3">
-                        <p>一般
-                            <br/>57.83%</p>
-                    </div>
-                    <div id="innerbar6_4"><img src="images/dislike.png">
-                        <p>
-                            <br/>11.29%</p>
+                <div class="card" id="card1">
+                    <img src="images/expression-super.png"/>
+                    <div class="data">
+                        <p class="rate">3.03%</p>
+                        <p class="option">非常满意</p>
                     </div>
                 </div>
-                <div id="qipao"><img width="180" src="images/dqh.png" />
-                    <br/>整体满意度较低
+                <div class="card" id="card2">
+                    <img src="images/expression-satisfied.png"/>
+                    <div class="data">
+                        <p class="rate">30.30%</p>
+                        <p class="option">满意</p>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <img src="images/expression-general.png"/>
+                    <div class="data">
+                        <p class="rate">57.58%</p>
+                        <p class="option">一般</p>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <img src="images/expression-unsatisfied.png"/>
+                    <div class="data">
+                        <p class="rate">9.09%</p>
+                        <p class="option">不满意</p>
+                    </div>
                 </div>
             </div>
             <!--            slide6 end-->
@@ -614,29 +624,8 @@
                 <div id="chart12">
                     <canvas id="canvas12"></canvas>
                 </div>
-                <div class="legend">
-                    <ul>
-                        <li>
-                            <div id="sqr12_1" class="sqr"></div>
-                            <p>非常想，已经在着手准备</p>
-                        </li>
-                        <li>
-                            <div id="sqr12_2" class="sqr"></div>
-                            <p>非常想，但不知道怎么操作</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="legend">
-                    <ul>
-                        <li>
-                            <div id="sqr12_3" class="sqr"></div>
-                            <p>有机会也想试试</p>
-                        </li>
-                        <li>
-                            <div id="sqr12_4" class="sqr"></div>
-                            <p>没考虑过</p>
-                        </li>
-                    </ul>
+                <div class="ins">
+                    <img src="images/slide12ins.png"/>
                 </div>
             </div>
             <!--            slide12 end-->
@@ -873,8 +862,8 @@
 
 
                         setTimeout(animate1, 0);
-                        setTimeout(animate5, 1000);
-                        setTimeout(animate6, 2000);
+                        setTimeout(animate5, 600);
+                        setTimeout(animate6, 1200);
                         break;
                     case 14: //slide9
                         $("#s9_1").animo({
@@ -917,7 +906,7 @@
                                 isPlay12 = false;
                                 canvas12();
                             }
-                            $(".slide12 .legend").show();
+                            setTimeout("$('.slide12 .ins').show();",800);
                         });
                         break;
                     case 18: //slide13
