@@ -107,12 +107,32 @@
     </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+                <ul>
+                    <li>
+                        <img src="images/smile.png" />
+                        <p>为了父母、老乡的灿烂笑容</p>
+                    </li>
+                    <li>
+                        <img src="images/view.png" />
+                        <p>为了家乡更美、更自然的风景</p>
+                    </li>
+                    <li>
+                        <img src="images/food.png" />
+                        <p>为了独特乡味的推广</p>
+                    </li>
+                </ul>
+                <div id="later1">在2位精益求精的教师指导下
+                    <br/>130名同学深入家乡寻觅特产</div>
+                <div id="later2">于是....
+                    <br/>就有了这样一个项目</div>
+            </div>
             <!--           slide0 start-->
             <div class="swiper-slide slide0">
                 <!--div id="logo"><img src="images/logo1.png" />
                 </div-->
                 <img id="img1" src="images/title.png" />
-                <img id="img2" src="images/jntd.png">
+                <p id="rbname">河北省涉农电子商务课题组</p>
             </div>
             <!--            slide0 end-->
             <div class="swiper-slide slide18">
@@ -231,13 +251,19 @@
             </div>
 
             <div class="swiper-slide slide1">
-                
+
                 <h1 id="s1_2">大部分农产品企业</br>没有使用过电子商务</h1>
-            <div class="ovso">
-                <div class="o" id="o1"><br/>93%<div>未使用</div></div>
-                <div class="o" id="o2"><br/>7%<div>使用过</div></div>
-                <div id="vs">vs</div>
-            </div>
+                <div class="ovso">
+                    <div class="o" id="o1">
+                        <br/>93%
+                        <div>未使用</div>
+                    </div>
+                    <div class="o" id="o2">
+                        <br/>7%
+                        <div>使用过</div>
+                    </div>
+                    <div id="vs">vs</div>
+                </div>
                 <p class="text">总体而言，涉农电子商务在河北涉农企业的利用率比较低，河北地区已开展电子商务的涉农企业并不多。</p>
                 <div class="bkdiv"></div>
             </div>
@@ -270,9 +296,9 @@
                         <div class="right bkyellow"></div>
                     </div>
                 </div>
-        <div class="ins">
-            <img src="images/slide2ins.png"/>
-        </div>
+                <div class="ins">
+                    <img src="images/slide2ins.png" />
+                </div>
             </div>
             <!--            slide2 end-->
 
@@ -393,28 +419,28 @@
             <div class="swiper-slide slide6">
                 <h1>农民对于传统生产经营状况<br/>的满意度</h1>
                 <div class="card" id="card1">
-                    <img src="images/expression-super.png"/>
+                    <img src="images/expression-super.png" />
                     <div class="data">
                         <p class="rate">3.03%</p>
                         <p class="option">非常满意</p>
                     </div>
                 </div>
                 <div class="card" id="card2">
-                    <img src="images/expression-satisfied.png"/>
+                    <img src="images/expression-satisfied.png" />
                     <div class="data">
                         <p class="rate">30.30%</p>
                         <p class="option">满意</p>
                     </div>
                 </div>
                 <div class="card" id="card3">
-                    <img src="images/expression-general.png"/>
+                    <img src="images/expression-general.png" />
                     <div class="data">
                         <p class="rate">57.58%</p>
                         <p class="option">一般</p>
                     </div>
                 </div>
                 <div class="card" id="card4">
-                    <img src="images/expression-unsatisfied.png"/>
+                    <img src="images/expression-unsatisfied.png" />
                     <div class="data">
                         <p class="rate">9.09%</p>
                         <p class="option">不满意</p>
@@ -625,7 +651,7 @@
                     <canvas id="canvas12"></canvas>
                 </div>
                 <div class="ins">
-                    <img width="290" src="images/slide12ins.png"/>
+                    <img width="290" src="images/slide12ins.png" />
                 </div>
             </div>
             <!--            slide12 end-->
@@ -718,13 +744,10 @@
                 keyboardControl: true,
                 onSlideNext: function (swiper) {
                     switch (mySwiper.activeIndex) {
-                    case 1:
-                        document.body.clientHeight;
+                    case 0:
+
                         break;
-                    case 6: //slide1
-                        
-                        break;
-                    case 7: //slide2
+                    case 8: //slide2
                         $(".slide2 h1").animo({
                             animation: 'bounceInRight',
                             duration: 1
@@ -734,10 +757,10 @@
                             $("#pi3").addClass("sp3");
                             $("#pi4").addClass("sp4");
                             $("#pi5").addClass("sp5");
-                            setTimeout("$('.slide2 .ins').show();",1000);
+                            setTimeout("$('.slide2 .ins').show();", 1000);
                         });
                         break;
-                    case 8: //slide3
+                    case 9: //slide3
                         $(".slide3 h1").animo({
                             animation: 'bounceInRight',
                             duration: 1
@@ -747,7 +770,7 @@
                             setTimeout("$('.slide3 p').show();$('.slide3 p').addClass('scaleYTopani');", 1500);
                         });
                         break;
-                    case 9: //slide4
+                    case 10: //slide4
                         $(".slide4 h1").animo({
                             animation: 'bounceInRight',
                             duration: 1
@@ -757,7 +780,7 @@
                         });
 
                         break;
-                    case 10: //slide5
+                    case 11: //slide5
                         $('#s5_1').animo({
                             animation: 'bounceInRight',
                             duration: 1
@@ -782,35 +805,35 @@
                         $(".paopao").mouseleave(function () {
                             $("#divMouse").css("display", "none");
                         });
-                            $("#c1").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="7.14%<div id='ti'></div>";
-                            });
-                            $("#c2").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="13.82%<div id='ti'></div>";
-                            });
-                            $("#c3").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="18.66%<div id='ti'></div>";
-                            });
-                            $("#c4").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="60.37%<div id='ti'></div>";
-                            });
-                            $("#c5").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="8.53%<div id='ti'></div>";
-                            });
-                            $("#c6").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="29.03%<div id='ti'></div>";
-                            });
-                            $("#c7").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="24.19%<div id='ti'></div>";
-                            });
-                            $("#c8").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="37.10%<div id='ti'></div>";
-                            });
-                            $("#c9").mousemove(function(){
-                                document.getElementById("divMouse").innerHTML="1.15%<div id='ti'></div>";
-                            });
+                        $("#c1").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "7.14%<div id='ti'></div>";
+                        });
+                        $("#c2").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "13.82%<div id='ti'></div>";
+                        });
+                        $("#c3").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "18.66%<div id='ti'></div>";
+                        });
+                        $("#c4").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "60.37%<div id='ti'></div>";
+                        });
+                        $("#c5").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "8.53%<div id='ti'></div>";
+                        });
+                        $("#c6").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "29.03%<div id='ti'></div>";
+                        });
+                        $("#c7").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "24.19%<div id='ti'></div>";
+                        });
+                        $("#c8").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "37.10%<div id='ti'></div>";
+                        });
+                        $("#c9").mousemove(function () {
+                            document.getElementById("divMouse").innerHTML = "1.15%<div id='ti'></div>";
+                        });
                         break;
-                    case 11: //slide6
+                    case 12: //slide6
                         $(".slide6 h1").animo({
                             animation: 'bounceInRight',
                             duration: 1
@@ -820,7 +843,7 @@
                             setTimeout("$('#qipao').show();$('#qipao').addClass('scaleYTopani');", 1000);
                         });
                         break;
-                    case 12: //slide7
+                    case 13: //slide7
                         $(".slide7 h1").animo({
                             animation: 'bounceInRight',
                             duration: 1
@@ -833,7 +856,7 @@
                             $(".slide7 .legend").show();
                         });
                         break;
-                    case 13: //slide8
+                    case 14: //slide8
                         function animate1() //出现标题
                             {
                                 $("#s8_2").show();
@@ -865,7 +888,7 @@
                         setTimeout(animate5, 600);
                         setTimeout(animate6, 1200);
                         break;
-                    case 14: //slide9
+                    case 15: //slide9
                         $("#s9_1").animo({
                             animation: 'bounceInRight',
                             duration: 1
@@ -875,7 +898,7 @@
                             setTimeout("$('.slide9 p').show();$('.slide9 p').addClass('scaleYTopani');", 800);
                         });
                         break;
-                    case 15: //slide10
+                    case 16: //slide10
                         $("#s10_2").animo({
                             animation: 'bounceInLeft',
                             duration: 1
@@ -885,7 +908,7 @@
                             setTimeout("$('.slide10 p').show();$('.slide10 p').addClass('scaleYTopani');", 800);
                         });
                         break;
-                    case 16: //slide11
+                    case 17: //slide11
                         $("#s11_1").show();
                         $("#s11_1").animo({
                             animation: 'bounceInRight',
@@ -896,7 +919,7 @@
                             setTimeout("$('#phoneqipao').show();$('#phoneqipao').addClass('scaleYTopani');", 1500);
                         });
                         break;
-                    case 17: //slide12
+                    case 18: //slide12
                         $(".slide12 h1").animo({
                             animation: 'bounceInRight',
                             duration: 1
@@ -906,10 +929,10 @@
                                 isPlay12 = false;
                                 canvas12();
                             }
-                            setTimeout("$('.slide12 .ins').show();",800);
+                            setTimeout("$('.slide12 .ins').show();", 800);
                         });
                         break;
-                    case 18: //slide13
+                    case 19: //slide13
                         $('#others').animo({
                             animation: "fadeInUp",
                             duration: 0.2,
@@ -970,7 +993,7 @@
                             });
                         });
                         break;
-                    case 19: //slide14
+                    case 20: //slide14
                         $(".slide14 .con .conLeft ul li").hover(function () {
                             var index = $(this).index();
                             $(this).addClass("hover").siblings().removeClass("hover");
@@ -984,6 +1007,31 @@
 
         function myloading() {
             $("#loadingpage").hide();
+            $(".slide-1 ul li:nth-child(1)").show();
+            $(".slide-1 ul li:nth-child(1)").animo({
+                animation: "lightSpeedIn",
+                duration: 0.5
+            }, function () {
+                $(".slide-1 ul li:nth-child(2)").show();
+                $(".slide-1 ul li:nth-child(2)").animo({
+                    animation: "lightSpeedIn",
+                    duration: 0.5
+                }, function () {
+                    $(".slide-1 ul li:nth-child(3)").show();
+                    $(".slide-1 ul li:nth-child(3)").animo({
+                        animation: "lightSpeedIn",
+                        duration: 0.5
+                    }, function () {
+                        $("#later1").show();
+                        $("#later1").animo({
+                            animation: "lightSpeedIn",
+                            duration: 0.5
+                        }, function () {
+                            setTimeout("$('#later1').animo({animation: 'lightSpeedOut',duration: 0.5}, function () {$('#later1').hide();$('#later2').show();$('#later2').animo({animation: 'lightSpeedIn',duration: 0.5});});",2000);
+                        });
+                    });
+                });
+            });
         }
     </script>
 
