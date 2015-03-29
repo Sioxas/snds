@@ -834,13 +834,28 @@
                         });
                         break;
                     case 12: //slide6
-                        $(".slide6 h1").animo({
-                            animation: 'bounceInRight',
-                            duration: 1
+                        $("#card1").show();
+                        $("#card1").animo({
+                            animation: "lightSpeedIn",
+                            duration: 0.5
                         }, function () {
-                            $(".slide6 .conbar").show();
-                            $(".slide6 .conbar").addClass("lani");
-                            setTimeout("$('#qipao').show();$('#qipao').addClass('scaleYTopani');", 1000);
+                            $("#card2").show();
+                            $("#card2").animo({
+                                animation: "lightSpeedIn",
+                                duration: 0.5
+                            }, function () {
+                                $("#card3").show();
+                                $("#card3").animo({
+                                    animation: "lightSpeedIn",
+                                    duration: 0.5
+                                }, function () {
+                                    $("#card4").show();
+                                    $("#card4").animo({
+                                        animation: "lightSpeedIn",
+                                        duration: 0.5
+                                    });
+                                });
+                            });
                         });
                         break;
                     case 13: //slide7
@@ -1027,7 +1042,7 @@
                             animation: "lightSpeedIn",
                             duration: 0.5
                         }, function () {
-                            setTimeout("$('#later1').animo({animation: 'lightSpeedOut',duration: 0.5}, function () {$('#later1').hide();$('#later2').show();$('#later2').animo({animation: 'lightSpeedIn',duration: 0.5});});",2000);
+                            setTimeout("$('#later1').animo({animation: 'lightSpeedOut',duration: 0.5}, function () {$('#later1').hide();$('#later2').show();$('#later2').animo({animation: 'lightSpeedIn',duration: 0.5});});", 2000);
                         });
                     });
                 });

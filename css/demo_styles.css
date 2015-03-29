@@ -285,7 +285,7 @@ body {
 }
 
 .slide-1 ul li:nth-child(3) {
-    background: #69ba63;
+    background:#f9a92c;
     display: none;
 }
 
@@ -1329,19 +1329,19 @@ body {
 }
 
 .slide6 #card1 {
-    background: #fff794;
+    background: #fff794;display:none;
 }
 
 .slide6 #card2 {
-    background: #9bbb59;
+    background: #9bbb59;display:none;
 }
 
 .slide6 #card3 {
-    background: #a9deff;
+    background: #a9deff;display:none;
 }
 
 .slide6 #card4 {
-    background: #ffc855;
+    background: #ffc855;display:none;
 }
 
 .scaleYTopani {
